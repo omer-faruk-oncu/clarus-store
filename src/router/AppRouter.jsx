@@ -6,18 +6,23 @@ import About from "../pages/About";
 import Products from "../pages/Products";
 import NotFound from "../pages/NotFound";
 import Navbar from "../components/Navbar";
+import PrivateRouter from "./PrivateRouter";
 
 const AppRouter = () => {
   return (
     // <BrowserRouter>
 
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
+
+        <Route path="/dashboard" element={<PrivateRouter />}>
+          <Route path="" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="/dashboard/products" element={<Products />} />
+        </Route>
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

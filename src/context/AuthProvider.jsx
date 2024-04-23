@@ -5,10 +5,11 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState("");
 
+
   const navigate = useNavigate();
   const login = (info) => {
     setUser(info);
-    navigate("/home");
+    navigate("/dashboard"); 
   };
 
   return (
