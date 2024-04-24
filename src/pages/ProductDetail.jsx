@@ -1,11 +1,17 @@
 import React from "react";
+import { useLocation, useParams } from "react-router-dom";
 
 const ProductDetail = () => {
+
+  const params = useParams()
+  console.log(params)
+  const location = useLocation()
+  console.log(location)
   return (
     <div className="mx-auto max-w-2xl px-4 pt-8 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
       <div className="mt-6 w-full ">
         <article className="mx-auto w-full block lg:flex mt-4 h-full 2xl:h-[70vh]  shadow-lg border rounded-md duration-300 hover:shadow-sm">
-          <div class="grid grid-rows-4 gap-2 h-full w-full lg:w-7/12 p-4">
+          <div className="grid grid-rows-4 gap-2 h-full w-full lg:w-7/12 p-4">
             <div className="w-full row-span-3">
               <img className="h-full w-full rounded-lg" src={"images"} alt="" />
             </div>
