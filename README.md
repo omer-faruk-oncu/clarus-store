@@ -1,3 +1,7 @@
+![clarus-store](https://github.com/omer-faruk-oncu/clarus-store/assets/154313389/b6bb6b18-86f9-4846-80bd-0b74a3f5ecd5)
+
+# https://clarus-store-oncu.netlify.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
